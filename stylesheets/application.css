@@ -289,13 +289,12 @@ body.controller-issues.action-show div#content {
   color: #b50000;
 }
 
-#top-menu #loggedas {
-  float: right;
-  margin-right: 0.5em;
+#top-menu #account {
   color: #900000;
 }
 
-#loggedas a.user {
+#top-menu #account .user-name,
+#top-menu #account .user-login {
   color: #d60a0a;
 }
 

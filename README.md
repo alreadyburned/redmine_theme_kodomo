@@ -1,3 +1,22 @@
+# Redmine theme for kids / Kodomo Redmine (Redmine 7.0.1 compatibility fork)
+
+> ⚠️ **This repository is a local fork of the original [redmine_theme_kodomo](https://github.com/akiko-pusu/redmine_theme_kodomo), with a small set of modifications.**
+> Rather than rewriting the theme, only the changes needed to address **compatibility issues with Redmine 7.0.1** were made, with the help of AI (Claude). The original README is preserved unchanged below this notice.
+
+## Changes in this fork
+
+- **Modified by**: Reviewed and modified with the help of AI (Claude)
+- **Purpose**: Compatibility fixes for Redmine 7.0.1
+- **Scope**: See the Fork Changelog below. The theme's design concept, fonts, and images remain unchanged from the original.
+
+### Fork Changelog
+
+- 2026-09-23
+  - Verified the theme against a live Redmine 7.0.1 server. Although the asset pipeline moved from Sprockets to Propshaft, the theme's existing relative-path `@import`/`url()` references continue to work without changes thanks to Redmine core's built-in path-rewriting.
+  - `stylesheets/application.css`: Replaced the `#top-menu #loggedas` / `#loggedas a.user` styles, which had become dead selectors after Redmine 7 redesigned the top account area into an avatar/dropdown layout (`#account`, `.user-name`, `.user-login`), with rules matching the current markup.
+
+---
+
 # Redmine theme for kids / Kodomo Redmine
 
 Redmine theme for kids and children.
