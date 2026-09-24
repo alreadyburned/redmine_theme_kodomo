@@ -16,7 +16,34 @@
     url("../font/kiloji/kiloji_b.woff") format("woff");
 }
 
+/* Gaegu (Korean, SIL OFL 1.1 - see ../font/gaegu/OFL.txt)
+   unicode-range limits it to Hangul, so Latin keeps 'Patrick Hand'
+   and Japanese keeps 'kiroji'. */
+@font-face {
+  font-family: 'Gaegu';
+  font-weight: 300;
+  font-display: swap;
+  src: url("../font/gaegu/Gaegu-Light.woff2") format("woff2");
+  unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7AF, U+D7B0-D7FF;
+}
+
+@font-face {
+  font-family: 'Gaegu';
+  font-weight: 400;
+  font-display: swap;
+  src: url("../font/gaegu/Gaegu-Regular.woff2") format("woff2");
+  unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7AF, U+D7B0-D7FF;
+}
+
+@font-face {
+  font-family: 'Gaegu';
+  font-weight: 700;
+  font-display: swap;
+  src: url("../font/gaegu/Gaegu-Bold.woff2") format("woff2");
+  unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7AF, U+D7B0-D7FF;
+}
+
 :root {
-  --font-family: 'Patrick Hand', 'kiroji_b', 'Kosugi Maru', Verdana, sans-serif;
-  --font-family-t: 'Patrick Hand', 'kiroji', 'Kosugi Maru', Consolas, Menlo, "Liberation Mono", Courier, monospace;
+  --font-family: 'Patrick Hand', 'Gaegu', 'kiroji_b', 'Kosugi Maru', Verdana, sans-serif;
+  --font-family-t: 'Patrick Hand', 'Gaegu', 'kiroji', 'Kosugi Maru', Consolas, Menlo, "Liberation Mono", Courier, monospace;
 }
