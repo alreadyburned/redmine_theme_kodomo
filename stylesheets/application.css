@@ -276,7 +276,8 @@ body.controller-issues.action-show div#content {
   color: #420707;
   outline: 2px dashed #cc6d6d80;;
   outline-offset: -5px;
-  padding: 10px 6px 0px 12px;
+  padding: 10px 6px 6px 12px;
+  font-size: 20px; /* core default is 0.75rem, too small for Gaegu */
 }
 
 #top-menu a {
